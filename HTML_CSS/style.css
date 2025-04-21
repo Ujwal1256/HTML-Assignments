@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+
+}
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.profilecard{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #444;
+}
+#profileimg{
+    height: 200px;;
+    width: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    border: white 5px solid;
+}
+.desciption{
+  
+    margin-inline-start: 10px;
+    align-content: center;
+}
+.desciption h1{
+    color: white;
+}
+.typewriter h2{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .icon{
+    height: 30px;
+    width: 30px;
+    padding: 20px;
+  }
+.iconscard{
+   flex: 1;
+    height: 20vh;
+
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    height: 70px;
+    width: 70px;
+    background-color: #caf7e3;
+    border-radius: 35px;
+    text-align: center;
+    margin: 7px;
+    line-height: 80px;
+}
+
+a i {
+    transition: all 0.3s linear;
+}
+
+a:hover i {
+    transform: scale(1.5);
+}
+
+.youtube:hover {
+    color: red;
+}
+
+.facebook:hover {
+    color: blue;
+}
+
+.instagram:hover {
+    color: #e11d74;
+}
+
+.twitter:hover {
+    color: #00adb5;
+}
+
+.github:hover {
+    color: black;
+}
+
+.linkedin:hover {
+    color: #04009a;
+}
+
+.projectsection{
+    display: flex;
+    flex-direction: row;
+   background-color: #00adb5;
+}
+.project{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    justify-items: center;
+    background-color: #93ae83e2;
+    border-radius: 30px;
+}
+
+.projdes{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
