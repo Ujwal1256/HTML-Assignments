@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 20px;
+    background-color: #fe6347;
+    
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav li{
+    padding: 20px;
+    color: white;
+    list-style: none;
+}
+div{
+    padding: 20px;
+}
