@@ -1,0 +1,26 @@
+.section-one a {
+  color: blue;
+}
+.section-two a {
+  color: darkorange;
+}
+.section-three a {
+  color: teal;
+}
+
+.section > a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.section a:hover {
+  color: crimson;
+}
+.section a:active {
+  color: black;
+}
+
+.section a[href^="https"] {
+  color: purple !important;
+  font-style: italic;
+}
