@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .card {
+      display: flex;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+      flex: 1;
+    }
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+    }
+    .card-content p {
+      margin: 0 0 10px;
+      color: #666;
+      font-size: 0.9em;
+    }
+    .card-content a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+      }
+      .card img {
+        width: 100%;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://picsum.photos/200/150?random=1" alt="Image 1">
+      <div class="card-content">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200/150?random=2" alt="Image 2">
+      <div class="card-content">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/200/150?random=3" alt="Image 3">
+      <div class="card-content">
+        <h3>Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vero deleniti incidunt rem. Voluptate, tempore quos, suscipit temporibus autem sapiente.</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
