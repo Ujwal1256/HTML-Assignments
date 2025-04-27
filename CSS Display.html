@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display Property</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      margin-bottom: 30px;
+    }
+
+    #block-element {
+      display: block;
+      width: 100%;
+      border: 2px solid #4CAF50;
+      background-color: #d4edda;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    #inline-element {
+      display: inline;
+      background-color: #ffeeba;
+      color: #856404;
+      padding: 5px 10px;
+      border: 1px solid #ffc107;
+      margin-right: 10px;
+    }
+
+    #inline-block-element {
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      background-color: #cce5ff;
+      border: 2px solid #339af0;
+      padding: 10px;
+      margin-right: 10px;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    #hidden-element {
+      display: none;
+      width: 200px;
+      height: 50px;
+      background-color: #f8d7da;
+      border: 2px solid #f5c6cb;
+      padding: 10px;
+      margin-top: 20px;
+      text-align: center;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Display Property </h2>
+
+  <div class="container">
+    <div id="block-element"> Block Element </div>
+    <span id="inline-element"> Inline Element</span>
+    <div id="inline-block-element">Inline-Block Element</div>
+  </div>
+
+  <div id="hidden-element">Hidden Element</div>
+
+</body>
+</html>
