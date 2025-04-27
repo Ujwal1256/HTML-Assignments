@@ -1,30 +1,38 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  display: flex;
-  gap: 10px;      
-  padding: 10px;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background: lightblue;
-  border: 1px solid black;
-
-}
-
-.text {
-  position: fixed;
-  left: 50%;
-  top: 10px;
-  transform: translateX(-50%);
-  background-color: yellow;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-weight: bold;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Add  padding */
+  }
+  
+  /* Make container a flexbox */
+  .container {
+    display: flex;
+    gap: 20px; /* Add space between boxes */
+    flex-wrap: wrap; /*  wrap box for responsive */
+    margin-top: 20px;
+  }
+  
+  .box {
+    flex: 1 1 100px; /*  boxes grow and shrink */
+    min-width: 100px;
+    height: 100px;
+    background: lightblue;
+    border: 1px solid black;
+    display: flex; /* Center text of the box */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .text {
+    margin-top: 30px; 
+    position: relative; 
+    text-align: center; /* Center align  */
+  }
+  
