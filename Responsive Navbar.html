@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+    }
+    .nav-items {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-items li {
+      padding: 10px;
+    }
+    .nav-items a {
+      color: white;
+      text-decoration: none;
+    }
+    .hamburger {
+      display: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+    }
+    #menu-toggle {
+      display: none;
+    }
+    @media (min-width: 1024px) {
+      .nav-items {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .nav-items {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    @media (max-width: 767px) {
+      .hamburger {
+        display: block;
+      }
+      .nav-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+      #menu-toggle:checked ~ .nav-items {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <input type="checkbox" id="menu-toggle">
+    <ul class="nav-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html> 
