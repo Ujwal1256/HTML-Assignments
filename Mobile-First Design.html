@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .card p {
+      margin: 0 10px 15px;
+      color: #666;
+    }
+    .card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .card button:hover {
+      background-color: #0056b3;
+    }
+    @media (min-width: 600px) {
+      .card-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .card-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <img src="https://picsum.photos/300/150?random=1" alt="Card Image 1">
+      <h3>Card Title 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/150?random=2" alt="Card Image 2">
+      <h3>Card Title 2</h3>
+      <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>Learn More</button>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/300/150?random=3" alt="Card Image 3">
+      <h3>Card Title 3</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+</body>
+</html>
